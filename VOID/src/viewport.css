@@ -1,0 +1,68 @@
+
+/*Transition right to left*/
+
+.page-transition {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    animation: slideFromRight 0.7s forwards;
+  }
+  
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .out {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    animation: slideFromLeft 0.5s forwards;
+  }
+  
+  /*Transition from left to left*/
+  .page-transition-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    animation: slideFromLeft 0.5s forwards;
+  }
+  
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+
+  /*Marquee animation*/
+
+  .marquee-content {
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite; /* Set the duration and timing function of the marquee */
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(100%); /* Start the marquee off-screen to the right */
+    }
+    to {
+      transform: translateX(-100%); /* Move the marquee completely off-screen to the left */
+    }
+  }

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Yeseva+One&display=swap');
+
+
+
+body {
+    font-family: 'Yeseva One', sans-serif;
+    color:antiquewhite;
+    background-color:  rgba(177, 31, 31, 0.945);
+}
+
+header {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: 30px;
+    margin-right: 10px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+header:hover {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient( rgba(255, 255, 255, 0.829) 30%, transparent 70%);
+    animation: scale 2s ease;
+    border-style: hidden;
+    
+   
+}
+nav {
+    font-family: 'News Cycle', sans-serif;
+}
+
+nav li {
+    list-style: none;
+    padding-top: 30px;
+    padding-right: 10px;
+    
+}
+
+nav a {
+    color: rgba(5, 5, 5);
+    text-decoration: none;
+}
+
+.biography {
+    font-size: 2em;
+    line-height: 1em;
+    transform: translateY(600px);
+
+}
+.bio-container {
+    position: relative;
+    z-index: 1;
+    margin-left: 4em;
+}
+
+#home {
+    transform: translateY(50vh);
+}
+#home a:hover {
+    color: rgb(145, 186, 248);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+.biopic {
+    width: 40%;
+ 
+}
